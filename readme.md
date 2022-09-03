@@ -1,0 +1,8 @@
+# Conectar Unity con un ESP32 vía UDP usando  entorno Arduino
+## Propósito
+Este es un procedimiento template, lo más simple posible, para interconectar una placa basada en el módulo Espressif ESP32 con un programa desarrollado en Unity que se ejecute  en una computadora conectada a la misma red de área local (LAN) que la placa mencionada.
+
+## Características
+El ejemplo plantea una comunicación bi-direccional mediante protocolo UDP de modo de poder controlar, mediante el extenso tipo de sensores pasibles de ser conectados al ESP32, cualquier entidad que viva en el programa de Unity, y simultáneamente, poder controlar motores y otros actuadores conectados al módulo, desde ese mismo programa. Dado el soporte de Espressif para la conexión WiFi, todo el intercambio puede ser inalámbrico.
+
+El programa para el ESP32 se desarrolló en Arduino, utilizando la librería [AsyncUDP](https://github.com/espressif/arduino-esp32/tree/master/libraries/AsyncUDP) que soporta los modos Brodcast y Multicast. El servidor Multicast planteado no requiere especificar de antemano la dirección IP de cada nodo, como sí sería el caso de una comunicación Unicast (punto a punto directa). De este modo, es posible comunicar simultáneamente múltiples nodos (tanto programas Unity como módulos ESP32) portados a cualquier red LAN, sin necesidad de conocer la IP que el DHCP haya asignado dináamicamente a cada uno. Para más detalles sobre los modos de 

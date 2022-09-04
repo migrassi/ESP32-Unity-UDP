@@ -1,7 +1,7 @@
 /*
   UDP_Servidor_Multicast
   Created:  2022/09/01
-  Last modified: 2022/09/03 23:34:53
+  Last modified: 2022/09/03 23:55:15
   Version: 1.0
 
   Author: Miguel Grassi
@@ -38,10 +38,8 @@
 #include "WiFi.h"
 #include "AsyncUDP.h"
 
-//const char * ssid = "mitodama";
-//const char * password = "ALaFubaMabaraCalacaTacuba";
-const char * ssid = "MiguelAP";
-const char * password = "ALaFubaM";
+const char * ssid = "xxxxxxxxxxxxxxxxxxxxxxx";
+const char * password = "xxxxxxxxxxxxxxxxxxxxxxx";
 
 const int puerto = 1234;
 
